@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Disease Prediction</title>
+    
+</head>
+    <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+<body>
+    <div class="container">
+        <h1>Personal Information Form</h1>
+        <form method="post", action="{{url_for('home')}}">
+            <div class="info">
+                <label for="name">Age:</label>
+                <input type="number" id="name" name='a' placeholder="Enter your Age" step="any" required>
+            </div>
+            <div class="info">
+                <label for="name">Sex:</label>
+                <input type="number" id="name" name='b' placeholder="Male=1&Female=0" step="any" required>
+            </div>
+            <div class="info">
+                <label for="name">CP:</label>
+                <input type="number" id="name" name="'c" placeholder="CP" step="any" required>
+            </div>
+            <div class="info">
+                <label for="name">Trestbps</label>
+                <input type="number" id="name" name='d' placeholder="Trestbps" step="any" required>
+            </div>
+            <div class="info">
+                <label for="name">Chol:</label>
+                <input type="number" id="name" name='e' placeholder="Chol Level" step="any" required>
+            </div>
+            <div class="info">
+                <label for="name">FBS</label>
+                <input type="number" id="name" name='f' placeholder="FBS" step="any" required>
+            </div>
+            <div class="info">
+                <label for="name">RestECG:</label>
+                <input type="number" id="name" name='g' placeholder="RestECG" step="any" required>
+            </div>
+            <div class="info">
+                <label for="name">Thalach:</label>
+                <input type="number" id="name" name='h' placeholder="Thalach Level" step="any" required>
+            </div>
+            <div class="info">
+                <label for="name">Exang:</label>
+                <input type="number" id="name" name='i' placeholder="Exang" step="any" required>
+            </div>
+            <div class="info">
+                <label for="name">Old peak:</label>
+                <input type="number" id="name" name='j' placeholder="Old peak in Decimal value" step="any" required>
+            </div>
+            <div class="info">
+                <label for="name">Slope</label>
+                <input type="number" id="name" name='k' placeholder="Slope value" step="any" required>
+            </div>
+            <div class="info">
+                <label for="name">CA:</label>
+                <input type="number" id="name" name='l' placeholder="CA" step="any" required>
+            </div>
+            <div class="info">
+                <label for="name">Thal:</label>
+                <input type="number" id="name" name='m' placeholder="Thal Level" step="any" required>
+            </div>
+            <div class="submit">
+                <button type="submit" value="predict">Submit</button>
+            </div>
+        </form>
+      </div>
+    
+
+
+</body>
+
+</html>

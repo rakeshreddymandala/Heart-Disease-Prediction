@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 10px;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    width: 100%;
+    max-width: 900px; /* Adjusted to a suitable width */
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: #333333;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Space between inputs */
+}
+
+.info {
+    flex: 1 1 30%; /*Make each input take up about half width, with some margin*/
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    color: #555;
+    font-size: 14px;
+}
+
+input, select, textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    font-size: 16px;
+    outline: none;
+    width: 60%;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #007bff;
+}
+
+.submit {
+    width: 100%;
+    text-align: center;
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #f5a623;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%; /* Full width for the button */
+}
+
+button:hover {
+    background-color: #f29e02;
+}
+
+
