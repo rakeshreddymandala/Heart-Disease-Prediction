@@ -1,11 +1,13 @@
-from flask import Flask,render_template,request
+from flask import Flask, render_template, request, url_for
 import pickle 
 import numpy  as np
 
 model= pickle.load(open('our_model.pkl','rb'))
 
 #Create a Flask app instance 
-app = Flask(__name__)
+app = Flask(__name__, 
+    static_folder='static',
+    template_folder='templates')
 
 #Define a route and a view function 
 @app.route('/')

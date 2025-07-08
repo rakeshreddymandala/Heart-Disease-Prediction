@@ -1,20 +1,29 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Disease Prediction Result</title>
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='result.css') }}">
+</head>
 <body>
-    
-    {%if data ==1%}
-    <h1>Has HeartDisease</h1>
-
-    {%else%}
-    <h1>No Heart Disease</h1>
-
-    {%endif%}
-
-        <br></br>
-    <a href="/">Go back to home page</a>
-
-
+    <div class="container">
+        <div class="result-box">
+            {% if data == 1 %}
+            <h1 class="result-positive">Heart Disease Detected</h1>
+            <p>Please consult with a healthcare professional for proper medical advice.</p>
+            {% else %}
+            <h1 class="result-negative">No Heart Disease Detected</h1>
+            <p>Your results appear normal, but always maintain a healthy lifestyle.</p>
+            {% endif %}
+            
+            <div class="submit">
+                <a href="/" style="text-decoration: none;">
+                    <button type="button">Back to Home</button>
+                </a>
+            </div>
+        </div>
+    </div>
 </body>
-
-
 </html>
